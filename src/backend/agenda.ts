@@ -4,6 +4,9 @@ import nodemailer from 'nodemailer'
 const mongoConnectionString = "mongodb+srv://gaurisariag:gaurisariag@flow.d8iacaw.mongodb.net/"
 const agenda = new Agenda({db: {address: mongoConnectionString}})
 
+const agendaRoute = async ()=>{
+
+
 
 
 agenda.define('send email',  async ()=> {
@@ -31,3 +34,6 @@ agenda.define('send email',  async ()=> {
   }); 
 
   await agenda.schedule('in one hour','send email')
+}
+
+export default agendaRoute
