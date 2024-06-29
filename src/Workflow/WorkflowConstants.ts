@@ -11,7 +11,7 @@ export const initalNodes: Node[]=[{
 },{
     id:"2",
     data:{},
-    position:{x:325,y:5},
+    position:{x:50,y:200},
     type:"waitSelect"
 },{
     id:"3",

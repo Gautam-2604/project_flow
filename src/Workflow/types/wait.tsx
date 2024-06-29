@@ -1,6 +1,6 @@
 import { Box, Flex, IconButton, Text } from "@chakra-ui/react";
 import { X } from "react-bootstrap-icons";
-import { NodeProps, useReactFlow } from "reactflow";
+import { Handle, NodeProps, useReactFlow } from "reactflow";
 
 export default function wait({data:{name, values, time}, id}: NodeProps<{name: string, values: string, time: number}>) {
     const {setNodes}= useReactFlow()
@@ -37,5 +37,6 @@ export default function wait({data:{name, values, time}, id}: NodeProps<{name: s
           }
         />
         </Flex>
+        
   )
 }
